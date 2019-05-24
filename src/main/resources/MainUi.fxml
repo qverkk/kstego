@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="600.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox minWidth="-Infinity" prefWidth="200.0">
+         <children>
+            <Button fx:id="encryptChoice" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgb(0,151,167); -fx-border-color: rgb(255,245,157);" text="Encrypt">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="100.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="decryptChoice" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgb(0,151,167); -fx-border-color: rgb(255,245,157);" text="Decrypt">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="100.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="typeChoice" alignment="CENTER" prefHeight="17.0" prefWidth="608.0" style="-fx-text-fill: rgb(120,144,156);" text="Type">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageView" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: black; -fx-border-width: 1;">
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="imagePathLabel" prefHeight="17.0" prefWidth="588.0" style="-fx-text-fill: rgb(120,144,156);" text="Image path">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="selectImageButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: rgb(63,81,181); -fx-border-color: rgb(255,235,59); -fx-text-fill: rgb(255,249,196);" text="Select image">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label prefWidth="70.0" style="-fx-text-fill: rgb(120,144,156);" text="Message" />
+                        <TextArea fx:id="messageTextArea" prefHeight="20.0" prefWidth="500.0" wrapText="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label prefWidth="70.0" style="-fx-text-fill: rgb(120,144,156);" text="Secret" />
+                        <TextArea fx:id="secretTextArea" prefHeight="20.0" prefWidth="500.0" wrapText="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Button fx:id="performButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="608.0" style="-fx-background-color: rgb(63,81,181); -fx-border-color: rgb(255,235,59); -fx-text-fill: rgb(255,249,196);" text="Type">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
